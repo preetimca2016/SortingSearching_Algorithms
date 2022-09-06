@@ -9,6 +9,7 @@ namespace Sorting_SearchingAlgorithms
             Console.WriteLine("Enter 1 For Insertion Sort");
             Console.WriteLine("Enter 2 For Bubble Sort");
             Console.WriteLine("Enter 3 For Merge Sort");
+            Console.WriteLine("Enter 4 For Anagram Detection");
             int input = Convert.ToInt32(Console.ReadLine());
             switch (input)
             {
@@ -22,6 +23,9 @@ namespace Sorting_SearchingAlgorithms
                     break;
                 case 3:
                     MergeSort.PrintArray();
+                    break;
+                case 4:
+                    Anagram.AnagramMethod();
                     break;
             }           
             
