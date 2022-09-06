@@ -8,6 +8,7 @@ namespace Sorting_SearchingAlgorithms
         {
             Console.WriteLine("Enter 1 For Insertion Sort");
             Console.WriteLine("Enter 2 For Bubble Sort");
+            Console.WriteLine("Enter 3 For Merge Sort");
             int input = Convert.ToInt32(Console.ReadLine());
             switch (input)
             {
@@ -15,12 +16,14 @@ namespace Sorting_SearchingAlgorithms
                     InsertionSortAlgo.PrintArray();
                     Console.ReadKey();
                     break;
-                    case 2:
+                case 2:
                     BubbleSort.PrintArray();
                     Console.ReadKey();
                     break;
-            }
-            
+                case 3:
+                    MergeSort.PrintArray();
+                    break;
+            }           
             
         }
     }
